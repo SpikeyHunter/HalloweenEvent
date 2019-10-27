@@ -1,0 +1,78 @@
+name: HalloweenMain
+version: 1.0.0
+main: com.spikeyhunter.halloweenmain.MainClass
+description: Halloween Event
+api-version: 1.14
+commands:
+    event:
+      usage: /<command>
+      description: Event Main Command
+    weaponry:
+      usage: /<command>
+      description: Open Weaponry
+      aliases:
+      - wp
+    ghost:
+      usage: /<command>
+      description: Ghost found message
+    loc:
+      usage: /<command>
+      description: Ghost found message
+    leave:
+      usage: /<command>
+      description: Leave the arena
+    halloween:
+      usage: /<command>
+      description: Halloween Command
+    treats:
+      usage: /<command>
+      description: Treats Command
+    talk:
+      usage: /<command>
+      description: talk command
+    sb:
+      usage: /<command>
+      description: Toggle the scoreboard
+softdepend:
+- Vault
+- WorldGuardEvents
+permissions:
+  halloween.admin:
+   description: Admin Permissions
+   default: op
+  npc.use:
+   description: Admin Permissions
+   default: false
+  weaponry.open:
+   description: Open Weaponry
+   default: op
+  portal.use:
+   description: Use the portal
+   default: op
+  ghost.use:
+   description: Use the ghost message
+   default: op
+  ghost.talked:
+   description: After first talk
+   default: op
+  thorne.talk:
+   description: talk to thorne
+   default: op
+  steven.tp:
+   description: Able to TP to steven
+   default: false
+  steven.fighting:
+   description: Able to TP to steven
+   default: false
+  steven.dead1:
+   description: Dead1
+   default: false
+  steven.dead2:
+   description: Dead2
+   default: false
+  steven.dead3:
+   description: Dead3
+   default: false
+  steven.defeated:
+   description: Steven Combat is done
+   default: false
